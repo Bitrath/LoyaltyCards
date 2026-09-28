@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertCardActivity">
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        app:srcCompat="@drawable/ic_standard_image" />
+
+    <Button
+        android:id="@+id/changeLogoButton"
+        android:layout_width="173dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="76dp"
+        android:text="Change Logo"
+        app:layout_constraintStart_toEndOf="@+id/logoImageView"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSave" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="382dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView">
+
+        <EditText
+            android:id="@+id/editTextTextCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:ems="10"
+            android:hint="Company Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextTextClientCode"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:ems="10"
+            android:hint="Client Code"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonCreateCodes"
+        android:layout_width="382dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:text="Generate QR - barcode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageView
+        android:id="@+id/imageViewBarcode"
+        android:layout_width="168dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/ic_barcode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCreateCodes" />
+
+    <ImageView
+        android:id="@+id/imageViewQRCode"
+        android:layout_width="168dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_qr_code"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCreateCodes" />
+
+    <Button
+        android:id="@+id/buttonChangeColorTheme"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:text="Change Color Theme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBarcode" />
+
+    <TextView
+        android:id="@+id/textViewColorTheme"
+        android:layout_width="123dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Color Theme"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBarcode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

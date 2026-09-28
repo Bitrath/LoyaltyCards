@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LoyaltyCards</string>
+    <string name="floating_button">AddCardButton</string>
+    <string name="company"><b>Company</b></string>
+    <string name="address"><b>Address</b></string>
+    <string name="client_code"><b>Fidelty Code</b></string>
+    <string name="more">...</string>
+    <string name="location_rationale">The app needs to know your current User Location to allow GeoFence API functions</string>
+    <string name="ask_ok_rationale">Allow</string>
+    <string name="ask_cancel_rationale">Deny</string>
+</resources>

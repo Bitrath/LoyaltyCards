@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".ShowCardInfoActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardInfoView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="4dp"
+        android:layout_margin="5dp"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="233dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_standard_image" />
+
+            <ImageView
+                android:id="@+id/codeImageView"
+                android:layout_width="365dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/ic_standard_image"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/favoriteButton"
+                android:layout_width="52dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                android:src="@android:drawable/btn_star"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardInfoView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+
+            <TextView
+                android:id="@+id/companyLabelTextView"
+                android:layout_width="111dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/company"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/companyCardLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/more" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="111dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/address"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/addressCardTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/more"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/clientCodeTextView"
+                android:layout_width="111dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/client_code"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/clientCodeCardTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/more" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/viewQRButton"
+        android:layout_width="166dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="View QR code"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardInfoView" />
+
+    <Button
+        android:id="@+id/viewBARCODEButton"
+        android:layout_width="166dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="View Barcode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardInfoView" />
+
+    <Button
+        android:id="@+id/deleteCardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Delete Card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
