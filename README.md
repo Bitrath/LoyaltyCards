@@ -1,4 +1,5 @@
 # LoyaltyCards 💳
+Final Android Project for the *Mobile Development* Course at the University of Parma, A.Y. 2021-2022. 
 
 **LoyaltyCards** is a native Android application built with Java, designed to help users manage, store, and utilize their digital loyalty and reward cards. 
 
